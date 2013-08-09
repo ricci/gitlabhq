@@ -34,6 +34,7 @@ describe GitPushService do
       it { should include(url: project.url_to_repo) }
       it { should include(description: project.description) }
       it { should include(homepage: project.web_url) }
+      it { should include(project_id: project.id) }
     end
 
     context "with commits" do

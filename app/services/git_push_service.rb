@@ -138,6 +138,7 @@ class GitPushService
       user_name: user.name,
       repository: {
         name: project.name,
+        project_id: project.id,
         url: project.url_to_repo,
         description: project.description,
         homepage: project.web_url,
